@@ -1,0 +1,41 @@
+/* GALLERY- PORTFOLIO  */
+
+.portfolio-list {
+  list-style: none;
+}
+.portfolio-link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.portfolio-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-description {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+/* BUTTON */
+
+.filter {
+  text-align: center;
+}
+.button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.button:hover,
+.butoon:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
