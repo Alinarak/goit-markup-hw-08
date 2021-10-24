@@ -1,8 +1,9 @@
-/* GALLERY- PORTFOLIO  */
+/*PORTFOLIO-CONTENT  */
 
 .portfolio-list {
   list-style: none;
 }
+
 .portfolio-link {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -24,7 +25,7 @@
 /* BUTTON */
 
 .filter {
-  text-align: center;
+  list-style: none;
 }
 .button {
   font-style: normal;
