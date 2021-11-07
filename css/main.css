@@ -1,17 +1,34 @@
+.heading {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .heading-title {
+  margin: 0 auto;
+  width: 696px;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
+  text-transform: uppercase;
 }
-
+.content {
+  padding-top: 94px;
+}
+.content-list {
+  display: flex;
+  justify-content: space-between;
+}
 .content-item {
   list-style: none;
 }
+.content-item:not(:last-child) {
+  padding-right: 30px;
+}
 
 .content-text {
+  padding-bottom: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -28,6 +45,8 @@
 }
 
 .gallery-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -35,19 +54,35 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.gallery-list {
+  display: flex;
+  justify-content: space-between;
+}
 .gallery-item {
   list-style: none;
+}
+.gallery-item > img {
+  display: block;
+}
+.gallery-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-title {
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 50px;
 }
 
 .team-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
 }
-
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
 .team-name {
   font-style: normal;
   font-weight: 500;
