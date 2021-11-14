@@ -9,7 +9,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/header.jpg);
-
+  margin: 0auto;
   max-width: 1600px;
   height: 600px;
   background-size: cover;
@@ -93,7 +93,9 @@
 .gallery-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.team {
+  background-color: var(--background-white-color);
+}
 .team-list {
   list-style: none;
   display: flex;
@@ -141,16 +143,17 @@
   margin: 16px 32px 30px;
 }
 
-.item-icon {
+.item-link {
   width: 44px;
   height: 44px;
   padding: 12px;
 }
 
-.item-icon:hover,
-.item-icon:focus {
+.item-link:hover,
+.item-link:focus {
   background-color: var(--accent-color);
   border-radius: 50px;
+  outline: none;
 }
 .item-svg {
   height: 20px;
@@ -160,8 +163,9 @@
 .item-link {
   display: inline-block;
 }
-.item-icon:hover .item-svg,
-.item-icon:focus .item-svg {
+
+.item-link:hover .item-svg,
+.item-link:focus .item-svg {
   fill: var(--primary-white-color);
 }
 
@@ -170,22 +174,25 @@
   display: flex;
   justify-content: center;
 }
-.clients-item {
+.clients-link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--border-color-gray);
   border-radius: 4px;
   padding: 16px 32px;
+  display: inline-block;
 }
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
+  outline: none;
 }
 
-.clients-item:hover .clients-icon,
-.clients-item:focus .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
+
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
