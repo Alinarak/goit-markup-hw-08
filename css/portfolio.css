@@ -86,10 +86,13 @@
   letter-spacing: 0.03em;
   cursor: pointer;
   padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
 }
 
 .button:hover,
 .button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  outline: none;
 }
