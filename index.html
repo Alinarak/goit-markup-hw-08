@@ -26,7 +26,7 @@
             <nav class="menu">
               <ul class="menu-list">
                 <li class="menu-item">
-                  <a href="index.html" class="menu-link-active text">Студия</a>
+                  <a href="index.html" class="menu-link active text">Студия</a>
                 </li>
                 <li class="menu-item">
                   <a href="portfolio.html" class="menu-link text">Портфолио</a>
@@ -69,7 +69,18 @@
       <section class="heading">
         <div class="container">
           <h1 class="heading-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button-active">Заказать услугу</button>
+          <button
+            type="button"
+            class="button-active btn-is-hidden"
+            data-modal-open
+          >
+            Заказать услугу
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-btn" data-modal-close></button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -114,6 +125,9 @@
           <ul class="gallery-list">
             <li class="gallery-item">
               <img src="./images/img.jpg" alt="Чем мы занимаемся" width="370" />
+              <div class="gallery-text">
+                <p class="gallery-description">Десктопные приложения</p>
+              </div>
             </li>
             <li class="gallery-item">
               <img
@@ -121,6 +135,9 @@
                 alt="Чем мы занимаемся"
                 width="370"
               />
+              <div class="gallery-text">
+                <p class="gallery-description">Мобильные приложения</p>
+              </div>
             </li>
             <li class="gallery-item">
               <img
@@ -128,6 +145,9 @@
                 alt="Чем мы занимаемся"
                 width="370"
               />
+              <div class="gallery-text">
+                <p class="gallery-description">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -386,5 +406,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
