@@ -272,7 +272,6 @@ body {
   font-size: 16px;
   line-height: 1.25;
   padding-left: 16px;
-  /* margin-right: 12px; */
 }
 
 .footer-form-btn {
@@ -284,7 +283,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  /* text-align: center; */
+
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
