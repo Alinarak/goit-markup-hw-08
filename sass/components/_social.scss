@@ -1,0 +1,35 @@
+.list-icon {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin: 16px 32px 30px;
+}
+
+.item-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-link {
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    border-radius: 50px;
+    outline: none;
+  }
+}
+.item-svg {
+  height: 20px;
+  width: 20px;
+  fill: var(--border-color-gray);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .item-link :hover &,
+  :focus & {
+    fill: var(--primary-white-color);
+  }
+}

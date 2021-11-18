@@ -1,5 +1,5 @@
 /*PORTFOLIO-CONTENT  */
-.portfolio-content {
+/* .portfolio-content {
   padding-top: 94px;
   padding-bottom: 94px;
   border-top: 1px solid var(--border-color-line);
@@ -35,8 +35,8 @@
 }
 .portfolio-img {
   display: block;
-}
-.img-text {
+} */
+/* .img-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -92,11 +92,11 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-}
+} */
 
 /* BUTTON */
 
-.filter {
+/* .filter {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -135,4 +135,4 @@
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   outline: none;
-}
+} */

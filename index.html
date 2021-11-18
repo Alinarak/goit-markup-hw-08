@@ -10,50 +10,55 @@
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <title>Web Studio</title>
   </head>
   <body>
-    <header class="top">
+    <header class="header">
       <div class="container">
-        <div class="info">
-          <div class="top-info">
+        <div class="header__info">
+          <div class="header__top-info">
             <a href="index.html" class="logo"
-              ><span class="logo-span">Web</span
-              ><span class="logo-span-black">Studio</span>
+              ><span class="logo__span">Web</span
+              ><span class="logo__span--black">Studio</span>
             </a>
             <nav class="menu">
               <ul class="menu-list">
-                <li class="menu-item">
-                  <a href="index.html" class="menu-link active text">Студия</a>
+                <li class="menu-list__item">
+                  <a href="index.html" class="menu-list__link active text"
+                    >Студия</a
+                  >
                 </li>
-                <li class="menu-item">
-                  <a href="portfolio.html" class="menu-link text">Портфолио</a>
+                <li class="menu-list__item">
+                  <a href="portfolio.html" class="menu-list__link text"
+                    >Портфолио</a
+                  >
                 </li>
-                <li class="menu-item">
-                  <a href="#" class="menu-link text">Контакты</a>
+                <li class="menu-list__item">
+                  <a href="#" class="menu-list__link text">Контакты</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="contact">
-            <ul class="contact-icon-list">
-              <li class="contact-icon-item">
+            <ul class="contact-list">
+              <li class="contact-list__item">
                 <a
                   href="mailto:info@devstudio.com"
-                  class="contact-icon-link text"
+                  class="contact-list__link text"
                 >
-                  <svg class="contact-icon" width="16" height="12">
+                  <svg class="contact-list__icon" width="16" height="12">
                     <use href="./images/sprite.svg#icon-mail" />
                   </svg>
                   info@devstudio.com</a
                 >
               </li>
 
-              <li class="contact-icon-item">
-                <a href="tel:+380961111111" class="contact-icon-link text">
-                  <svg class="contact-icon" width="16" height="12">
+              <li class="contact-list__item">
+                <a href="tel:+380961111111" class="contact-list__link text">
+                  <svg class="contact-list__icon" width="16" height="12">
                     <use href="./images/sprite.svg#icon-smartphone" />
                   </svg>
                   +38 096 111 11 11
@@ -68,17 +73,95 @@
     <main>
       <section class="heading">
         <div class="container">
-          <h1 class="heading-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="heading__title">Эффективные решения для вашего бизнеса</h1>
           <button
             type="button"
-            class="button-active btn-is-hidden"
+            class="button-active btn btn-is-hidden"
             data-modal-open
           >
             Заказать услугу
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="modal-btn" data-modal-close></button>
+              <p class="modal__title">
+                Оставьте свои данные, мы вам перезвоним
+              </p>
+              <form action="#" class="modal__form">
+                <div class="modal-form__field">
+                  <label class="modal-form__label" for="user-name">Имя</label>
+                  <span class="modal-form__input-wrap">
+                    <input
+                      class="modal-form__input"
+                      type="text"
+                      name="user-name"
+                      id="user-name"
+                  /></span>
+                  <svg class="modal-form__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-man"></use>
+                  </svg>
+                </div>
+                <div class="modal-form__field">
+                  <label for="user-tel" class="modal-form__label"
+                    >Телефон</label
+                  >
+                  <span class="modal-form__input-wrap">
+                    <input
+                      class="modal-form__input"
+                      type="tel"
+                      name="user-tel"
+                      id="user-tel"
+                  /></span>
+                  <svg class="modal-form__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+                <div class="modal-form__field">
+                  <label for="user-mail" class="modal-form__label">Почта</label>
+                  <span class="modal-form__input-wrap">
+                    <input
+                      class="modal-form__input"
+                      type="mail"
+                      name="user-mail"
+                      id="user-mail"
+                  /></span>
+                  <svg class="modal-form__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
+                <div class="modal-form__field">
+                  <label for="user-comment" class="modal-form__label"
+                    >Комментарий</label
+                  >
+                  <textarea
+                    name="user-comment"
+                    id="user-comment"
+                    class="modal-form__text"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </div>
+                <div class="modal-form__field">
+                  <input
+                    class="modal-form__input-check"
+                    type="checkbox"
+                    name="policy"
+                    value="yes"
+                    id="input-check"
+                  />
+                  <label for="input-check" class=".modal-form__check-text">
+                    <span></span>Соглашаюсь с рассылкой и принимаю
+                    <a href="#" class="modal-form__check-link">
+                      Условия договора</a
+                    ></label
+                  >
+                </div>
+
+                <button class="modal-form__btn" type="submit">Отправить</button>
+              </form>
+              <button
+                type="reset"
+                class="modal-form__close-btn"
+                data-modal-close
+              ></button>
             </div>
           </div>
         </div>
@@ -402,6 +485,24 @@
                 ></a>
               </li>
             </ul>
+          </div>
+          <div class="footer-right">
+            <p class="footer-invent">подпишись на рассылку</p>
+            <div class="form-block">
+              <form action="#" class="footer-form">
+                <label for="name"></label>
+                <input
+                  class="footer-input"
+                  type="text"
+                  name="E-mail"
+                  id="E-mail"
+                  placeholder="E-mail"
+                />
+                <button type="reset" class="footer-form-btn btn" type="submit">
+                  <span class="footer-btn-text"> Подписаться</span>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
