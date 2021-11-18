@@ -412,16 +412,13 @@ body {
   background-size: 70px 70px;
   background-repeat: no-repeat;
 }
-
-.content-item:nth-child(1), .content-item:before {
+.content-item:nth-child(1):before {
   background-image: url(../images/antenna.svg);
 }
-
-.content-item:nth-child(2), .content-item:before {
+.content-item:nth-child(2):before {
   background-image: url(../images/clock.svg);
 }
-
-.content-item:nth-child(3), .content-item:before {
+.content-item:nth-child(3):before {
   background-image: url(../images/diagram.svg);
 }
 
