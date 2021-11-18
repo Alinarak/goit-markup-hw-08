@@ -312,7 +312,7 @@ body {
 
 /* BUTTON  */
 
-.footer-form-btn {
+/* .footer-form-btn {
   position: relative;
   display: inline-block;
   width: 200px;
@@ -321,7 +321,7 @@ body {
   border-radius: 4px;
   outline: none;
   border: none;
-} */
+}  */
 /* .btn {
   font-style: normal;
   font-weight: 700;
@@ -413,7 +413,7 @@ body {
   animation: scaling 10s steps(1) 0s infinite;
 } */
 
-.modal-field:not(:last-child) {
+/* .modal-field:not(:last-child) {
   margin-bottom: 10px;
 }
 .modal-title {
@@ -557,4 +557,4 @@ body {
 .input-check:checked + .check-text span {
   background-color: var(--accent-color);
   border: none;
-} */
+}  */
