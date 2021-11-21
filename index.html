@@ -25,30 +25,86 @@
               ><span class="logo__span--black">Studio</span>
             </a>
             <nav class="menu">
-              <ul class="menu-list">
-                <li class="menu-list__item">
-                  <a href="index.html" class="menu-list__link active text"
-                    >Студия</a
-                  >
-                </li>
-                <li class="menu-list__item">
-                  <a href="portfolio.html" class="menu-list__link text"
-                    >Портфолио</a
-                  >
-                </li>
-                <li class="menu-list__item">
-                  <a href="#" class="menu-list__link text">Контакты</a>
-                </li>
-              </ul>
+              <button
+                type="button"
+                class="menu__button"
+                aria-expanded="false"
+                aria-controls="menu__mobile"
+                data-menu-button
+              >
+                <svg
+                  width="40"
+                  height="40"
+                  aria-label="Переключатель мобильного меню"
+                >
+                  <use
+                    class="icon-cross"
+                    href="./images/sprite.svg#icon-close"
+                  ></use>
+                  <use
+                    class="icon-menu"
+                    href="./images/sprite.svg#icon-menu"
+                  ></use>
+                </svg>
+              </button>
+              <div class="menu__mobile" id="menu__mobile" data-menu>
+                <ul class="menu-list">
+                  <li class="menu-list__item">
+                    <a href="index.html" class="menu-list__link active"
+                      >Студия</a
+                    >
+                  </li>
+                  <li class="menu-list__item">
+                    <a href="portfolio.html" class="menu-list__link"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Контакты</a>
+                  </li>
+                </ul>
+                <div class="menu__contact">
+                  <ul class="menu__contact-list">
+                    <li class="menu__contact-item tel">
+                      <a
+                        href="tel:+380961111111"
+                        class="menu__contact-link text"
+                      >
+                        +38 096 111 11 11
+                      </a>
+                    </li>
+                    <li class="menu__contact-item mail">
+                      <a
+                        href="mailto:info@devstudio.com"
+                        class="menu__contact-link"
+                      >
+                        info@devstudio.com</a
+                      >
+                    </li>
+                  </ul>
+
+                  <ul class="menu__social-list">
+                    <li class="menu__social-item">
+                      <a href="" class="menu__social-link">Instagram</a>
+                    </li>
+                    <li class="menu__social-item">
+                      <a href="" class="menu__social-link">Twitter</a>
+                    </li>
+                    <li class="menu__social-item">
+                      <a href="" class="menu__social-link">Facebook</a>
+                    </li>
+                    <li class="menu__social-item">
+                      <a href="" class="menu__social-link">LinkedIn</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </nav>
           </div>
           <div class="contact">
             <ul class="contact-list">
               <li class="contact-list__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="contact-list__link text"
-                >
+                <a href="mailto:info@devstudio.com" class="contact-list__link">
                   <svg class="contact-list__icon" width="16" height="12">
                     <use href="./images/sprite.svg#icon-mail" />
                   </svg>
@@ -71,7 +127,7 @@
     </header>
 
     <main>
-      <section class="heading">
+      <!-- <section class="heading">
         <div class="container">
           <h1 class="heading__title">Эффективные решения для вашего бизнеса</h1>
           <button
@@ -170,7 +226,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="content">
         <div class="container">
@@ -183,24 +239,24 @@
               </p>
             </li>
             <li class="content-list__item content-icon">
-              <h3 class="content-list__text">Внимание к деталям</h3>
+              <h3 class="content-list__text">Пунктуальность</h3>
               <p class="content-list__description">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
               </p>
             </li>
             <li class="content-list__item content-icon">
-              <h3 class="content-list__text">Внимание к деталям</h3>
+              <h3 class="content-list__text">Планирование</h3>
               <p class="content-list__description">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
               </p>
             </li>
             <li class="content-list__item content-icon">
-              <h3 class="content-list__text">Внимание к деталям</h3>
+              <h3 class="content-list__text">Современные технологии</h3>
               <p class="content-list__description">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
               </p>
             </li>
           </ul>
@@ -397,6 +453,7 @@
           </div>
         </div>
       </section>
+
       <section class="clients section">
         <div class="container">
           <h2 class="clients__title title">Постоянные клиенты</h2>
@@ -442,7 +499,7 @@
       </section>
     </main>
 
-    <footer class="bottom">
+    <footer class="bottom section">
       <div class="container">
         <div class="footer__thumb">
           <div class="footer__left">
@@ -513,5 +570,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

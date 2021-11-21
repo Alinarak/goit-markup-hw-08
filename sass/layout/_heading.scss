@@ -1,3 +1,15 @@
+.heading__title {
+  margin: 0 auto;
+  // width: 696px;
+  width: 360px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
 .heading {
   text-align: center;
   padding-top: 200px;
@@ -15,15 +27,4 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-.heading__title {
-  margin: 0 auto;
-  width: 696px;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--title-text-color);
 }

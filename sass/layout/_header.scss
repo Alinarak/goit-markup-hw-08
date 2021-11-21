@@ -1,14 +1,21 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  // padding-top: 24px;
+  // padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
-.header__info {
-  display: flex;
-  justify-content: space-between;
+// .header__info {
+//   display: flex;
+//   justify-content: space-between;
 
-  align-items: center;
-}
+//   align-items: center;
+// }
+// .header__top-info {
+//   display: flex;
+//   align-items: center;
+// }
 .header__top-info {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
