@@ -2,10 +2,10 @@
   background-color: var(--background-black-color);
   border: 1px solid var(--border-color-black);
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
   @media screen and(min-width:1200px) {
     text-align: start;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 .footer__thumb {

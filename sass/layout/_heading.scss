@@ -1,6 +1,6 @@
 .heading__title {
   margin: 0 auto;
-
+  width: 360px;
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
@@ -9,7 +9,6 @@
   text-transform: uppercase;
   color: var(--title-text-color);
   @media screen and(min-width:768px) {
-    width: 360px;
   }
   @media screen and(min-width:1200px) {
     width: 696px;
