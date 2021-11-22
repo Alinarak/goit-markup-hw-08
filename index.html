@@ -48,19 +48,19 @@
                 </svg>
               </button>
               <div class="menu__mobile" id="menu__mobile" data-menu>
-                <ul class="menu-list">
-                  <li class="menu-list__item">
-                    <a href="index.html" class="menu-list__link active"
+                <ul class="menu__mobile-list">
+                  <li class="menu__mobile-item">
+                    <a href="index.html" class="menu__mobile-link active"
                       >Студия</a
                     >
                   </li>
-                  <li class="menu-list__item">
-                    <a href="portfolio.html" class="menu-list__link"
+                  <li class="menu__mobile-item">
+                    <a href="portfolio.html" class="menu__mobile-link"
                       >Портфолио</a
                     >
                   </li>
-                  <li class="menu-list__item">
-                    <a href="#" class="menu-list__link">Контакты</a>
+                  <li class="menu__mobile-item">
+                    <a href="#" class="menu__mobile-link">Контакты</a>
                   </li>
                 </ul>
                 <div class="menu__contact">
@@ -101,6 +101,17 @@
               </div>
             </nav>
           </div>
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a href="index.html" class="menu-list__link active">Студия</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="portfolio.html" class="menu-list__link">Портфолио</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Контакты</a>
+            </li>
+          </ul>
           <div class="contact">
             <ul class="contact-list">
               <li class="contact-list__item">
@@ -127,7 +138,7 @@
     </header>
 
     <main>
-      <!-- <section class="heading">
+      <section class="heading">
         <div class="container">
           <h1 class="heading__title">Эффективные решения для вашего бизнеса</h1>
           <button
@@ -226,7 +237,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section class="content">
         <div class="container">
@@ -268,27 +279,82 @@
           <h2 class="gallery-title title">Чем мы занимаемся</h2>
           <ul class="gallery-list">
             <li class="gallery-list__item">
-              <img src="./images/img.jpg" alt="Чем мы занимаемся" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/directions/img-desktop-1x-1.jpg 1x,
+                    ./images/directions/img-desktop-2x-1.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/directions/img-desktop-1x-1.jpg 1x,
+                    ./images/directions/img-desktop-2x-1.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  src="./images/directions/img-desktop-1x-1.jpg"
+                  alt="Чем мы занимаемся"
+                  width="370"
+                />
+              </picture>
+
               <div class="gallery-list__text">
                 <p class="gallery-list__description">Десктопные приложения</p>
               </div>
             </li>
             <li class="gallery-list__item">
-              <img
-                src="./images/box2.jpg"
-                alt="Чем мы занимаемся"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/directions/img-desktop-1x-2.jpg 1x,
+                    ./images/directions/img-desktop-2x-2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/directions/img-desktop-2x-2.jpg 1x,
+                    ./images/directions/img-desktop-2x-2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  src="./images/directions/img-desktop-2x-2.jpg"
+                  alt="Чем мы занимаемся"
+                  width="370"
+                />
+              </picture>
+
               <div class="gallery-list__text">
                 <p class="gallery-list__description">Мобильные приложения</p>
               </div>
             </li>
+
             <li class="gallery-list__item">
-              <img
-                src="./images/box3.jpg"
-                alt="Чем мы занимаемся"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/directions/img-desktop-1x-3.jpg 1x,
+                    ./images/directions/img-desktop-2x-3.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/directions/img-desktop-2x-3.jpg 1x,
+                    ./images/directions/img-desktop-2x-3.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  src="./images/directions/img-desktop-2x-3.jpg"
+                  alt="Чем мы занимаемся"
+                />
+              </picture>
+
               <div class="gallery-list__text">
                 <p class="gallery-list__description">Дизайнерские решения</p>
               </div>
@@ -303,10 +369,17 @@
           <div class="team__cards">
             <div class="team__card">
               <img
-                src="./images/team-card-1.jpg"
+                scrset="./images/our-team/img1-desktop-1x.jpg 270w, 
+              ./images/our-team/img1-tablet-1x.jpg 354w,  
+              ./images/our-team/img1-mob-1x.jpg 450w,
+              ./images/our-team/img1-desktop-2x.jpg 540w, 
+              ./images/our-team/img1-tablet-2x.jpg 708w,  
+              ./images/our-team/img1-mob-2x.jpg 900w"
+                sizes="(min-width:1200px) 270w, (min-width:768px) 354w, (min-width:450px) 450w, 100vw"
+                src="./images/our-team/img1-mob-1x.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
               />
+
               <div class="team-card__text">
                 <h3 class="team-card__name">Игорь Демьяненко</h3>
                 <p class="team-card__description">Product Designer</p>
@@ -340,9 +413,15 @@
             </div>
             <div class="team__card">
               <img
-                src="./images/team-card-2.jpg"
+                scrset="./images/our-team/img2-desktop-1x.jpg 270w, 
+              ./images/our-team/img2-tablet-1x.jpg 354w,  
+              ./images/our-team/img2-mob-1x.jpg 450w,
+              ./images/our-team/img2-desktop-2x.jpg 540w, 
+              ./images/our-team/img2-tablet-2x.jpg 708w,  
+              ./images/our-team/img2-mob-2x.jpg 900w"
+                sizes="(min-width:1200px) 270w, (min-width:768px) 354w, (min-width:450px) 450w, 100vw"
+                src="./images/our-team/img2-mob-1x.jpg"
                 alt="Ольга Репина"
-                width="270"
               />
               <div class="team-card__text">
                 <h3 class="team-card__name">Ольга Репина</h3>
@@ -377,9 +456,15 @@
             </div>
             <div class="team__card">
               <img
-                src="./images/team-card-3.jpg"
+                scrset="./images/our-team/img3-desktop-1x.jpg 270w, 
+              ./images/our-team/img3-tablet-1x.jpg 354w,  
+              ./images/our-team/img3-mob-1x.jpg 450w,
+              ./images/our-team/img3-desktop-2x.jpg 540w, 
+              ./images/our-team/img3-tablet-2x.jpg 708w,  
+              ./images/our-team/img3-mob-2x.jpg 900w"
+                sizes="(min-width:1200px) 270w, (min-width:768px) 354w, (min-width:450px) 450w, 100vw"
+                src="./images/our-team/img3-mob-1x.jpg"
                 alt="Николай Тарасов"
-                width="270"
               />
               <div class="team-card__text">
                 <h3 class="team-card__name">Николай Тарасов</h3>
@@ -415,9 +500,15 @@
 
             <div class="team__card">
               <img
-                src="./images/team-card-4.jpg"
+                scrset="./images/our-team/img4-desktop-1x.jpg 270w, 
+            ./images/our-team/img4-tablet-1x.jpg 354w,  
+            ./images/our-team/img4-mob-1x.jpg 450w,
+            ./images/our-team/img4-desktop-2x.jpg 540w, 
+            ./images/our-team/img4-tablet-2x.jpg 708w,  
+            ./images/our-team/img4-mob-2x.jpg 900w"
+                sizes="(min-width:1200px) 270w, (min-width:768px) 354w, (min-width:450px) 450w, 100vw"
+                src="./images/our-team/img4-mob-1x.jpg"
                 alt="Михаил Ермаков"
-                width="270"
               />
               <div class="team-card__text">
                 <h3 class="team-card__name">Михаил Ермаков</h3>
