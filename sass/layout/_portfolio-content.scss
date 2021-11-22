@@ -10,6 +10,7 @@
   margin-right: 30px;
   margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
 
   &:hover {
     .portfolio__list {
@@ -23,6 +24,7 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   @media screen and(min-width:480px) {
+    margin-right: 0;
   }
   @media screen and(min-width:768px) {
     margin-right: 0;
@@ -39,6 +41,7 @@
   }
 
   @media screen and(min-width:1200px) {
+    width: 370px;
     margin-right: 30px;
     &:nth-child(3n) {
       margin-right: 0;
@@ -98,6 +101,9 @@
 .portfolio__wrap {
   position: relative;
   overflow: hidden;
+  img {
+    width: 100%;
+  }
 }
 
 .portfolio__text {
